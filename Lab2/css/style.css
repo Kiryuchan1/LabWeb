@@ -1,0 +1,108 @@
+header, footer {
+  width: 95%;
+  border: 1px solid black;
+  margin: 1%;
+}
+
+header {
+  background: #777;
+  color: white;
+  padding: 10px;
+  display: flex;
+  height: 15vh;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 350px;
+}
+
+header ul li a {
+  color: white;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar, .content {
+  border: 1px solid black;
+  height: 50vh;
+  margin: 1%;
+  padding: 1%;
+  background-color: lightblue;
+}
+
+.sidebar {
+  width: 10%;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  font-size: 25px;
+}
+
+.sidebar ul li {
+  margin-bottom: 100px;
+}
+
+.content {
+  width: 80%;
+}
+
+.row1 img, .row2 img {
+  margin: 10px;
+  box-shadow: 5px 5px 5px purple;
+  border-radius: 30px;
+  width: 14%;
+  height: auto;
+}
+
+.row1 img:hover, .row2 img:hover {
+  transform: scale(1.1);
+}
+
+.lists-container {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+  width: 700px;
+  text-align: left;
+}
+
+.list li {
+  padding: 2px;
+}
+
+footer {
+  background: #888;
+  height: 20vh;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.lists-container h2 {
+  margin: 0;
+}
+
+.sidebar a:hover, header a:hover, .lists-container a:hover {
+  color: red;
+}
