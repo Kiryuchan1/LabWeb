@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Реєстрація</title>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="https://www.factinate.com/storage/app/media/factinate/2021/05/Michi-no-miya_Hirohito_1902.jpg" alt="Логотип">
+            </a>         
+            <nav>
+                <ul>
+                    <li><a href="authorization.html">Sign in</a> </li>
+                    <li><a href="registration.html">Sign up</a> </li>
+                    <li><a href="faq.html">FAQ</a></li> 
+                    <li><a href="contacts.html">Contacts</a></li> 
+                    <li><a href="info.html">Groups</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="auth-form">
+                <h2>Реєстрація</h2>
+                <form action="#" method="POST">
+                    <input placeholder="Пошта" type="email" id="email" name="email" required><br><br>
+                    <input placeholder="Пароль"type="password" id="password" name="password" required><br><br>
+                    <input placeholder="Прізвище"type="text" id="last_name" name="last_name" required><br><br>
+                    <input placeholder="Ім'я"type="text" id="first_name" name="first_name" required><br><br>
+                    <input placeholder="Побатькові"type="text" id="middle_name" name="middle_name" required><br><br>
+                    <input placeholder="Дата народження"type="date" id="birthdate" name="birthdate" required><br><br>
+                    <select placeholder="Оберіть группу" id="group" name="group">
+                        <option value="group1">Тюльпан</option>
+                        <option value="group2">Роза</option>
+                        <option value="group3">Ромашка</option>
+                    </select><br><br>
+                    <label for="file">Завантажити файл:</label>
+                    <input type="file" id="file" name="file" accept=".jpg, .png, .jpeg" required><br><br>
+                    <button type="submit">Зареєструватися</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="contact-icons">
+                <a href="tel:+380676110670" target="_blank"><i class="fa-solid fa-phone"></i>Телефон</a>
+                <a href="mailto:kiryuchan2004@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Email</a>
+                <a href="https://t.me/Kiryuchan1" target="_blank"><i class="fab fa-telegram"></i>Телеграм</a>
+                <a href="https://api.whatsapp.com/send?phone=номер-телефону" target="_blank"><i class="fab fa-whatsapp-square"></i> WhatsApp</a>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>
