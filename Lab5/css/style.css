@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5;
+    min-height: 97vh;
+}
+
+header {
+    background-color: lightgreen;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.user1, .user2 {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input {
+    width: 97%;
+    margin-bottom: 10px;
+}
+
+.chat {
+    background-color: red;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.user1 {
+    background-color: black;
+    color: white;
+}
+
+.user2 {
+    background-color: white;
+    color: black;
+}
+
+.message {
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.user1-message {
+    background-color: black;
+    color: white;
+    float: left;
+}   
+
+.user2-message {
+    background-color: white;
+    color: black;
+    float: right;
+}
+
+button {
+    padding: 10px 20px; 
+    background-color: cyan;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border-radius: 10px;
+}
+
+button:hover {
+    scale: 1.1;
+    background-color: blue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .input {
+        width: 60%;
+    }
+
+    .user1, .user2 {
+        width: 20%;
+    }
+
+    button {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+

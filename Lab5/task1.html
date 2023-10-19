@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Прямокунтик</title>
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="task1.html">Завдання 1</a></li>
+                        <li><a href="task2.html">Завдання 2</a></li>
+                        <li><a href="task3.html">Завдання 3</a></li> 
+                        <li><a href="task4.html">Завдання 4</a></li> 
+                    </ul>
+                </nav>
+        </header>
+        <div>
+            <label for="length">Довжина:</label>
+            <input placeholder="Довжина" type="text" id="length" oninput="calculateRectangle()" /><br><br>
+
+            <label for="width">Ширина:</label>
+            <input placeholder="Ширина" type="text" id="width" oninput="calculateRectangle()" />
+
+            <p>Периметр: <span id="perimeter">0</span></p>
+            <p>Площа: <span id="area">0</span></p>
+            <p>Довжина діагоналі: <span id="diagonal">0</span></p>
+        </div>
+        <script src="js/script1.js"></script>
+    </body>
+</html>
