@@ -11,11 +11,16 @@ function sendMessage(user) {
         } else if (user === 'user2') {
             messageElement.classList.add("user2-message");
         }
-
-
+        
         messageElement.textContent = `${user} : ${message}`;
         chatElement.appendChild(messageElement);
         inputElement.value = "";
         chatElement.scrollTop = chatElement.scrollHeight;
+    }
+}
+
+function checkEnter(event, user) {
+    if (event.key === "Enter") {
+        sendMessage(user);
     }
 }

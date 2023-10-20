@@ -2,7 +2,7 @@ function calculateRectangle() {
     const length = parseFloat(document.getElementById("length").value);
     const width = parseFloat(document.getElementById("width").value);
 
-    if (!isNaN(length) && !isNaN(width)) {
+    if (length > 0 && width > 0) {
         const perimeter = 2 * (length + width);
         const area = length * width;
         const diagonal = Math.sqrt(length ** 2 + width ** 2);

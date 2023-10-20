@@ -17,16 +17,17 @@
                 </ul>
             </nav>
         </header>
+        <h1>Гірше цього дизайну тільке моє життя</h1>
         <div class="container">
             <div class="user1">
                 <label >User 1</label>
-                <input placeholder="Введіть повідомлення" type="text" id="user1" class="input">
+                <input placeholder="Введіть повідомлення" type="text" id="user1" class="input" onkeydown="checkEnter(event, 'user1')">
                 <button onclick="sendMessage('user1')">Надіслати</button>
             </div>
             <div class="chat" id="chat"></div>
             <div class="user2">
                 <label >User 2</label>
-                <input placeholder="Введіть повідомлення" type="text" id="user2" class="input">
+                <input placeholder="Введіть повідомлення" type="text" id="user2" class="input" onkeydown="checkEnter(event, 'user2')">
                 <button onclick="sendMessage('user2')">Надіслати</button>
             </divs>
         </div>

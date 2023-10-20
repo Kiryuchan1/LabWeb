@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 5;
-    min-height: 97vh;
+    min-height: 87vh;
 }
 
 header {
@@ -50,7 +50,9 @@ nav a {
     border: 1px solid black;
     overflow-y: scroll;
     border-radius: 10px;
+    height: 800px; 
 }
+
 
 .user1 {
     background-color: black;
