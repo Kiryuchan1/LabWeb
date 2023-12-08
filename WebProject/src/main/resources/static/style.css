@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.container {
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+header img {
+    max-width: 7vh;
+    height: auto;
+}
+
+a:hover {
+    color: red;
+}
+
+li a:hover {
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+td a {
+    text-decoration: none;
+    color: cyan;
+    transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 428px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    nav ul {
+        margin-top: 5px;
+
+    }
+
+    nav li {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .system {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .orbit.earth,
+    .orbit.moon {
+        left: 1px;
+        top: 1px;
+    }
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #007bff;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-container table, .table-container th, .table-container td {
+    border: 1px solid #000;
+}
+
+.table-container thead {
+    background-color: rebeccapurple;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 black;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0 #ff5252;
+}
+
+button:active {
+    background-color: yellow;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.system {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 30px white;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.globe.earth {
+    background: aqua;
+    height: 30px;
+    right: 28px;
+    top: 28px;
+    width: 30px;
+}
+
+.globe.moon {
+    width: 12px;
+    height: 12px;
+    background: #d6d6d6;
+    right: 2px;
+    top: 8px;
+}
+
+.globe {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.orbit.earth {
+    position: relative;
+    animation: orbit 36.5s linear infinite;
+    height: 300px;
+    left: 50px;
+    top: 50px;
+    width: 300px;
+}
+
+.orbit.moon {
+    animation: orbit 2.7s linear infinite;
+    height: 80px;
+    left: -25px;
+    top: -25px;
+    width: 80px;
+}
+
+
+.orbit {
+    position: relative;
+    border: solid;
+    border-color: white transparent transparent transparent;
+    border-radius: 50%;
+    border-width: 1px 1px 0 0;
+    box-sizing: border-box;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    background-color: #001f3f;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+input {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+}
