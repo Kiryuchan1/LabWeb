@@ -1,0 +1,89 @@
+@import 'base.css';
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        place-items: center;
+        background-image: url('https://images.wallpaperscraft.ru/image/single/tsvety_sakura_pattern_139321_1280x720.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #app {
+        width: 1000%; /* Ширина контейнера */
+        margin: 5px; /* Горизонтальне центрування */
+        padding: 20px; /* Відступи від країв */
+        background-color: navy; /* Колір фону контейнера */
+        border: 1px solid #ccc; /* Рамка контейнера */
+        border-radius: 5px; /* Закруглені кути контейнера */
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        width: 35%;
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-check-input {
+        margin-right: 5px;
+    }
+
+    .error-message {
+        color: red;
+        font-weight: bold;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
+
+    input, select {
+        padding: 10px 20px;
+        background-color: lightblue;
+        border-radius: 10px;
+        border-color: black;
+        border: 1px solid black;
+    }
+
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff5252;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0 black;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #ff5252;
+        border: 2px solid #ff5252;
+        box-shadow: 5px 5px 0 #ff5252;
+    }
+
+    button:active {
+        background-color: yellow;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+}
